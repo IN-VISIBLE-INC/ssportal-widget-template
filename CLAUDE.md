@@ -8,11 +8,8 @@
 
 **ウィジェット実装前に必ず読むこと:**
 
-```
-web/src/components/widgets/WIDGET_RULES.md
-```
-
-外部開発の場合: https://github.com/IN-VISIBLE-INC/ss_portal/blob/master/web/src/components/widgets/WIDGET_RULES.md
+- ローカル: `web/src/components/widgets/WIDGET_RULES.md`
+- GitHub: https://github.com/IN-VISIBLE-INC/ss_portal/blob/master/web/src/components/widgets/WIDGET_RULES.md
 
 ---
 

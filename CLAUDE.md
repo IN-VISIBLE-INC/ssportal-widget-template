@@ -8,11 +8,8 @@
 
 **ウィジェット実装前に必ず読むこと:**
 
-```
-docs/WIDGET_RULES.md
-```
-
-このファイルにすべての実装ルール、型定義、サンプルコードが記載されています。
+- **内部開発（ss_portal内で複製した場合）**: `../WIDGET_RULES.md`
+- **外部開発（GitHubからクローンした場合）**: https://github.com/IN-VISIBLE-INC/ss_portal/blob/master/web/src/components/widgets/WIDGET_RULES.md
 
 ---
 
@@ -32,7 +29,6 @@ src/
 ```
 @ssportal/          ← SDK（編集禁止）
 app/                ← プレビュー用（編集不要）
-docs/               ← ドキュメント（参照のみ）
 ```
 
 ---
@@ -71,7 +67,7 @@ import { WidgetThemeConfig } from '@ssportal/WidgetThemeConfig';
 
 ## 実装フロー
 
-1. `docs/WIDGET_RULES.md` を読む
+1. WIDGET_RULES.md を読む（上記リンク参照）
 2. `src/manifest.json` を編集（id, name, availableSizes等）
 3. `src/index.tsx` を実装
 4. `npm run dev` でプレビュー確認

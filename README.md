@@ -21,10 +21,8 @@ npm install
 
 ### 3. ドキュメントを読む
 
-```bash
-# 必ず読んでください
-cat docs/WIDGET_RULES.md
-```
+制作ルールを確認してください:
+https://github.com/IN-VISIBLE-INC/ss_portal/blob/master/web/src/components/widgets/WIDGET_RULES.md
 
 ### 4. メタデータを編集
 
@@ -82,8 +80,6 @@ git push -u origin main --tags
 │   ├── layout.tsx
 │   ├── page.tsx
 │   └── globals.css
-├── docs/
-│   └── WIDGET_RULES.md # 制作ルール（必読）
 ├── src/                # 編集するファイル
 │   ├── index.tsx       # ウィジェット本体
 │   ├── config.tsx      # 設定パネルUI

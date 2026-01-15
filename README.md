@@ -13,14 +13,20 @@ rm -rf .git
 git init
 ```
 
-### 2. ドキュメントを読む
+### 2. 依存関係をインストール
+
+```bash
+npm install
+```
+
+### 3. ドキュメントを読む
 
 ```bash
 # 必ず読んでください
 cat docs/WIDGET_RULES.md
 ```
 
-### 3. メタデータを編集
+### 4. メタデータを編集
 
 `src/manifest.json` を編集:
 
@@ -40,18 +46,30 @@ cat docs/WIDGET_RULES.md
 }
 ```
 
-### 4. ウィジェットを実装
+### 5. ウィジェットを実装
 
 - `src/index.tsx` - ウィジェット本体
 - `src/config.tsx` - 設定パネルUI
 
-### 5. バージョン管理
+### 6. プレビューで確認
+
+```bash
+npm run dev
+# http://localhost:3001 でプレビュー
+```
+
+プレビュー画面では:
+- 全サイズパターンを同時表示
+- ライト/ダークテーマ切り替え
+- manifest.json の内容確認
+
+### 7. バージョン管理
 
 ```bash
 git add .
 git commit -m "feat: 初期実装"
 git tag v1.0.0
-git remote add origin https://github.com/your-org/your-widget.git
+git remote add origin https://github.com/your-org/ssportal-widget-your-name.git
 git push -u origin main --tags
 ```
 
@@ -60,6 +78,10 @@ git push -u origin main --tags
 ```
 .
 ├── CLAUDE.md           # Claude Code への指示
+├── app/                # プレビュー用（編集不要）
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
 ├── docs/
 │   └── WIDGET_RULES.md # 制作ルール（必読）
 ├── src/                # 編集するファイル
@@ -70,6 +92,15 @@ git push -u origin main --tags
 ├── package.json
 └── tsconfig.json
 ```
+
+## コマンド
+
+| コマンド | 説明 |
+|---------|------|
+| `npm run dev` | プレビューサーバー起動 (localhost:3001) |
+| `npm run build` | ビルド |
+| `npm run typecheck` | 型チェック |
+| `npm run lint` | Lint実行 |
 
 ## SSPortal への統合
 

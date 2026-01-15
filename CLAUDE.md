@@ -31,8 +31,26 @@ src/
 
 ```
 @ssportal/          ← SDK（編集禁止）
+app/                ← プレビュー用（編集不要）
 docs/               ← ドキュメント（参照のみ）
 ```
+
+---
+
+## プレビュー
+
+ウィジェットをブラウザでプレビューできます。
+
+```bash
+npm install
+npm run dev
+# http://localhost:3001 でプレビュー
+```
+
+プレビュー画面では:
+- 全サイズパターンを同時表示
+- ライト/ダークテーマ切り替え
+- manifest.json の内容確認
 
 ---
 
@@ -56,8 +74,9 @@ import { WidgetThemeConfig } from '@ssportal/WidgetThemeConfig';
 1. `docs/WIDGET_RULES.md` を読む
 2. `src/manifest.json` を編集（id, name, availableSizes等）
 3. `src/index.tsx` を実装
-4. `src/config.tsx` を実装
-5. 動作確認
+4. `npm run dev` でプレビュー確認
+5. `src/config.tsx` を実装
+6. ライト/ダーク両モードで動作確認
 
 ---
 

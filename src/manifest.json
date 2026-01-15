@@ -1,0 +1,22 @@
+{
+  "manifestVersion": "1.0",
+  "id": "my_widget",
+  "name": "マイウィジェット",
+  "description": "ウィジェットの説明",
+  "version": "1.0.0",
+  "author": {
+    "name": "Your Name"
+  },
+  "category": "misc",
+  "defaultSize": {
+    "width": 2,
+    "height": 2
+  },
+  "availableSizes": [
+    { "width": 2, "height": 2 },
+    { "width": 4, "height": 2 }
+  ],
+  "defaultConfig": {
+    "theme": "dark"
+  }
+}

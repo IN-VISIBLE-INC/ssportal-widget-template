@@ -8,8 +8,11 @@
 
 **ウィジェット実装前に必ず読むこと:**
 
-- **内部開発（ss_portal内で複製した場合）**: `../WIDGET_RULES.md`
-- **外部開発（GitHubからクローンした場合）**: https://github.com/IN-VISIBLE-INC/ss_portal/blob/master/web/src/components/widgets/WIDGET_RULES.md
+```
+web/src/components/widgets/WIDGET_RULES.md
+```
+
+外部開発の場合: https://github.com/IN-VISIBLE-INC/ss_portal/blob/master/web/src/components/widgets/WIDGET_RULES.md
 
 ---
 
